@@ -22,6 +22,7 @@ describe("POST /register", () => {
       .send({ priceWeth: "0.075", priceUsdc: "120.50" });
 
     expect(response.status).toBe(201);
+    
     expect(QuoteModel.create).toHaveBeenCalledWith({
       priceWeth: "0.075",
       priceUsdc: "120.50",
