@@ -15,7 +15,6 @@ app.post("/register", async (req, res) => {
             // console.log(err)
             res.status(400).send({msg: `Error: ${err}`})
         })
-
 });
 
 app.get('/getPrices', async(req, res) => {
